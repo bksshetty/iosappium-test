@@ -26,7 +26,7 @@ machine:
         background: true
     - sleep 5
 
-   test:
+  test:
    #cd to Code directory
    cd autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
    #build
