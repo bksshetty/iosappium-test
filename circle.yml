@@ -30,6 +30,6 @@ machine:
    # cd to Code directory
    cd autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
    # build
-   xcodebuild -configuration Release -target UICatalog -arch i386 -sdk iphonesimulator8.2
+   build -configuration Release -target UICatalog -arch i386 -sdk iphonesimulator8.2
    # run robot test
    pybot tests/robotSample/iosUICatlog.robot
