@@ -1,6 +1,5 @@
 dependencies:
   override:
-  	# Install Robot Framework, Appium, Robotframework-appiumlibrary
 	pip install robotframework
 	gem install appium_console
 	pip install robotframework-appiumlibrary
