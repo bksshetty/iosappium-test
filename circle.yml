@@ -1,8 +1,8 @@
 dependencies:
-  override:
-	pip install robotframework
-	gem install appium_console
-	pip install robotframework-appiumlibrary
+  pre:
+	- pip install robotframework
+	- gem install appium_console
+	- pip install robotframework-appiumlibrary
 
 general:
 	# Set Build directory
