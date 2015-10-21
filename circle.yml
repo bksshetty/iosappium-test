@@ -1,11 +1,11 @@
 dependencies:
   pre:
-	- pip install robotframework
-	- gem install appium_console
-	- pip install robotframework-appiumlibrary
+  - pip install robotframework
+  - gem install appium_console
+  - pip install robotframework-appiumlibrary
 
 general:
-	# Set Build directory
+  # Set Build directory
   build_dir: autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
 
 machine:
@@ -16,12 +16,12 @@ machine:
     version: "6.3.1"
 
   environment:
-  	# Set XCode_Project and Scheme 
-  	XCODE_PROJECT: autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
-  	XCODE_SCHEME: UICatalog.xcscheme
+    # Set XCode_Project and Scheme 
+    XCODE_PROJECT: autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
+    XCODE_SCHEME: UICatalog.xcscheme
 
   post:
-  	# Run appium in background after build completes
+    # Run appium in background after build completes
     - ./appium:
         background: true
     - sleep 5
