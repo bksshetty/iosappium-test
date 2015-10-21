@@ -27,9 +27,7 @@ machine:
     - sleep 5
 
   test:
-   # cd to Code directory
-   cd autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
-   # build
-   build -configuration Release -target UICatalog -arch i386 -sdk iphonesimulator8.2
-   # run robot test
-   pybot tests/robotSample/iosUICatlog.robot
+    override:
+     - cd autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
+     - xcodebuild -configuration Release -target UICatalog -arch i386 -sdk iphonesimulator8.2
+     - pybot tests/robotSample/iosUICatlog.robot
