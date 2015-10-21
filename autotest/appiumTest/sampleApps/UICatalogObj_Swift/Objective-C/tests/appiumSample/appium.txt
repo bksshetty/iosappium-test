@@ -1,0 +1,4 @@
+[caps]
+platformName = "ios"
+deviceName = "iPhone"
+app = "./../../build/Release-iphoneos/UICatalog.app"
